@@ -1,10 +1,12 @@
 function createMyObject() {
-  foo: 'bar';
-  answerToUniverse: 42;
-  ollyolly: 'oxen free';
-  sayHello: function (){
-    console.log(`hello`)
-  }
+  return { //why return here?
+    foo: 'bar', //why commas instead of semicolon?
+    answerToUniverse: 42,
+    'olly olly': 'oxen free', //can we have string as a key?
+    sayHello: function () {
+      return 'hello';
+    }, //why comma here?
+  };
 }
 
 createMyObject();
